@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>My Pets List</h1>
+            <form [formGroup]="form">
+                <button type="button" (click)="addPetFormField()">
+                    Add Pet
+                </button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Pet Name</th>
+                            <th>Pet Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr formArrayName="pets" *ngFor="let pet of petsFormArray.controls; index as index">
+                            <td>
+                                <app-editable *ngIf="getControl(index, 'name')" (updateField)="updateField(index)">
+                                    <ng-template appViewMode>{{getValue(index, 'name') }}
+                                    </ng-template>
+                                    <ng-template appEditMode>
+                                        <input [formControl]="getControl(index, 'name')">
+                                    </ng-template>
+                                </app-editable>
+                            <td>
+                                <app-editable *ngIf="getControl(index, 'type')" (updateField)="updateField(index)">
+                                    <ng-template appViewMode>{{getValue(index, 'type')}}
+                                    </ng-template>
+                                    <ng-template appEditMode>
+                                        <input [formControl]="getControl(index, 'type')">
+                                    </ng-template>
+                                </app-editable>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</div>

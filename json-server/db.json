@@ -1,0 +1,34 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "name": "Whiskers",
+      "type": "cat"
+    },
+    {
+      "id": 2,
+      "name": "Siri",
+      "type": "squirrel"
+    },
+    {
+      "id": 3,
+      "name": "Frodo",
+      "type": "dogo"
+    },
+    {
+      "id": 4,
+      "name": "Kiko",
+      "type": "amazon parrot"
+    },
+    {
+      "id": 5,
+      "name": "Helena",
+      "type": "buzzard"
+    },
+    {
+      "id": 6,
+      "name": "Koda",
+      "type": "budgie"
+    }
+  ]
+}

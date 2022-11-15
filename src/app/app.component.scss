@@ -1,0 +1,54 @@
+h1 {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 0px;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
+form {
+    margin: 50px;
+    color: rgb(0, 0, 0);
+
+    button {
+        margin-bottom: 50px;
+        padding: 10px 35px;
+        font-size: 18px;
+        color: white;
+        border: none;
+        background-color: rgb(90, 185, 164);
+    }
+
+    tr {
+        th {
+            padding: 10px;
+            background-color: rgb(90, 185, 164);
+            border: 1px solid rgb(90, 185, 164);
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid rgb(163, 163, 163);
+            text-align: center;
+            font-size: 15px;
+            font-weight: 800;
+
+
+        }
+    }
+
+}
