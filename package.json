@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "mock:api": "node json-server/server"
+    "mock:api": "node json-server/server",
+    "heroku-postbuild": "npm install && npm run build && node json-server/server"
   },
   "private": true,
   "dependencies": {
@@ -55,5 +56,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "4.7.2"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.19.3"
   }
 }
