@@ -8,9 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "mock:api": "node json-server/server",
-    "heroku-postbuild": "npm install && npm run build && node json-server/server"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -60,6 +58,5 @@
   "engines": {
     "node": "16.13.0",
     "npm": "8.19.3"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }

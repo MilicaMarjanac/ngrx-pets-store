@@ -23,7 +23,6 @@ export class PetEffects {
   loadPets$ = createEffect(() =>
     this.actions$.pipe(ofType(loadPets)).pipe(
       switchMap(() => {
-        console.log("loadPets$");
         return this.petService.getPets().pipe(
           map((pets) => loadPetsSuccess({ pets })),
           catchError((error) => of(loadPetsFail(error)))
