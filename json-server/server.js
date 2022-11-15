@@ -1,4 +1,5 @@
 const path = require("path");
+const cors = require("cors");
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json"));
@@ -9,7 +10,7 @@ server.use(
     "/api/*": "/$1",
   })
 );
-
+server.use(cors());
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
