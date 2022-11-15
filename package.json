@@ -60,5 +60,6 @@
   "engines": {
     "node": "16.13.0",
     "npm": "8.19.3"
-  }
+  },
+  "proxy": "http://localhost:3000"
 }
